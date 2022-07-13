@@ -1,12 +1,10 @@
 import * as React from 'react';
-import { cardImageStyle, cardStyle } from '../Shared/StylePresets';
 
 const PriorJob = props => {
 
-
-    const formattedLines = props.desc.map( el => {
+    const formattedLines = props.desc.map( (el, index) => {
         return (
-            <p>{el}</p>
+            <p key={`jobKey${index}`}>{el}</p>
         )
     })
 

@@ -45,9 +45,10 @@ const PriorExp = () => {
         }
     ];
 
-    const formattedProirs = priors.map(el => {
+    const formattedProirs = priors.map( (el, index) => {
         return (
             <PriorJob
+                key={`priorJobKey${index}`}
                 title={el.title}
                 desc={el.desc}
             />

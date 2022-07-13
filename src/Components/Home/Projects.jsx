@@ -29,9 +29,10 @@ const Projects = () => {
         },
     ];
 
-    const formattedProjects = projects.map(el => {
+    const formattedProjects = projects.map( (el, index) => {
         return (
             <Project
+                key={`projectKey${index}`}
                 imgsrc={el.imgsrc}
                 title={el.title}
                 desc={el.desc}

@@ -31,16 +31,19 @@ const About = () => {
     ]
 
 
-    const getCircles = (amt, filled = false) => [...Array(amt).keys()].map(el => {
+    const getCircles = (amt, filled = false) => [...Array(amt).keys()].map(index => {
         return filled ?
-        (<span className='mx-1 fa-solid fa-circle'></span>) :
-        (<span className='mx-1 fa-regular fa-circle'></span>)
+        (<span key={`spanKey${index}`} className='mx-1 fa-solid fa-circle'></span>) :
+        (<span key={`spanKey${index}`} className='mx-1 fa-regular fa-circle'></span>)
     })
 
     const formattedSkills = () => {
-        return skillset.map( el => {
+        return skillset.map( (el, index) => {
             return (
-            <div className='mx-4 d-flex flex-nowrap justify-content-center'>
+            <div
+                key={`skillsetKey${index}`}
+                className='mx-4 d-flex flex-nowrap justify-content-center'
+            >
                 <span className='w-50'>{el.skill}</span>
                 {getCircles(el.amt, 1)}
                 {getCircles(5 - el.amt)}
