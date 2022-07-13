@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+:root {
+    --primary-color: #4f6ef7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+    background-color: var(--primary-color);
+    overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title-font {
+    font-family: 'Abril Fatface', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* We need to set our media-show's to none on non-mobile displays */
+.media-show {
+    display: none !important;
 }
 
-.App-link {
-  color: #61dafb;
+#hero {
+    position: fixed;
+    left: -10vw;
+    top: 0;
+    width: 130vw;
+    height: auto;
+    z-index: -999;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* mobile */
+@media only screen and (max-width: 800px) {
+    .media-show {
+        display: block !important;
+    }
+    .media-remove {
+        display: none !important;
+    }
+    .media-widen {
+        width: 85% !important;
+    }
+    .media-widen-x {
+        width: 90% !important;
+    }
+    #hero {
+        left: -160vw;
+        width: 420vw;
+    }
 }
