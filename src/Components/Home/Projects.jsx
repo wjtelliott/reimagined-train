@@ -55,7 +55,7 @@ const Projects = () => {
                 data-aos='fade-up'
                 style={boxShadowStyle}
             >
-                <p className='m-3 text-center p-3 display-5 title-font' >My Recent Projects</p>
+                <p className='m-5 text-center p-3 display-5 title-font' >My Recent Projects</p>
             </div>
             
             {formattedProjects}
