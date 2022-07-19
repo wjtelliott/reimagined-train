@@ -3,9 +3,9 @@ import { cardImageStyle, cardStyle } from '../Shared/StylePresets';
 
 const Project = props => {
     return (
-        <div className='mt-5 d-flex flex-nowrap justify-content-center'>
+        <div className='mt-5 w-75 media-full mx-5 d-flex flex-nowrap justify-content-center'>
             <div
-                className='w-50 m-5 media-widen'
+                className='w-50 media-full'
                 data-aos={props.aosStyle}
                 data-aos-delay={props.aosDelay}
                 data-aos-duration={props.aosDuration}

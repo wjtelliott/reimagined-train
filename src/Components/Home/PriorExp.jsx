@@ -57,9 +57,9 @@ const PriorExp = () => {
 
 
     return (
-        <div className='mt-5 d-flex flex-nowrap justify-content-center'>
+        <div className='mt-5 m-auto media-widen w-75 d-flex flex-nowrap justify-content-center'>
             <div
-                className='w-50 m-3 media-widen-x'
+                className='w-50 media-full'
                 data-aos='zoom-out-right'
                 id='exp'
             >

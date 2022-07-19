@@ -41,6 +41,9 @@ body {
     .media-widen-x {
         width: 90% !important;
     }
+    .media-full {
+        width: 100% !important;
+    }
     #hero {
         left: -160vw;
         width: 420vw;

@@ -8,6 +8,7 @@ const Contact = () => {
 
     return (
         <div
+            className='w-75 m-auto media-full'
             id='contact'
         >
 

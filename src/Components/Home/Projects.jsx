@@ -21,7 +21,7 @@ const Projects = () => {
             title: 'Restaurant Picker',
             desc: 'Have no idea where to eat out at tonight? Type/Click a category or "I\'m flexible" to choose a local restaurant in your current area at random. Uses multiple APIs to display local businesses, an interactive GeoMap, and to get the user\'s GEO-Location. Users are authorized through Auth0 and info is stored with a NoSQL back-end. This uses a free Heroku account, and may take a while to load on the first request.',
             imgalt: 'An image of the idc-picker webpage',
-            aosStyle: 'fade-left',
+            aosStyle: 'zoom-in-up',
             aosDelay: '300',
             aosDuration: '1000',
             repoLink: 'https://github.com/wjtelliott/i-dont-care',
@@ -47,7 +47,7 @@ const Projects = () => {
     })
 
     return (
-        <div className='mt-5 d-flex flex-wrap justify-content-center' id='projects'>
+        <div className='my-5 d-flex flex-wrap justify-content-center' id='projects'>
 
             
             <div
@@ -55,7 +55,7 @@ const Projects = () => {
                 data-aos='fade-up'
                 style={boxShadowStyle}
             >
-                <p className='m-3 display-6 title-font' >My Recent Projects</p>
+                <p className='m-3 text-center p-3 display-5 title-font' >My Recent Projects</p>
             </div>
             
             {formattedProjects}
