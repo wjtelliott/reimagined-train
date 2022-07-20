@@ -54,19 +54,21 @@ const About = () => {
 
     return (
         <div
-            className='my-4 px-3 d-flex flex-nowrap justify-content-evenly'
+            className='my-4 d-flex flex-nowrap justify-content-evenly media-full'
             style={divStyle}
             id='about'
         >
 
+            
+
             <img
-                className='rounded-circle w-25 media-remove'
+                className='img-fluid media-remove w-25 rounded-circle mx-5'
                 src="/images/portrait.jpg"
                 alt="A portrait image"
                 style={boxShadowStyle}
             />
 
-            <div className='card w-50 media-widen' style={cardStyle}>
+            <div className='card w-50 media-widen-x mx-5' style={cardStyle}>
                 <img
                     src="/images/portrait.jpg"
                     className="card-img-top media-show"
@@ -75,11 +77,18 @@ const About = () => {
                 />
 
                 <p className='card-title display-6 m-4 title-font'>About Me</p>
+
                 <p className='card-content m-4'>
-                    Aspiring Software Developer coming from a hobbyist background in C#, Python, Java, and Javascript.
+                    Software Developer with a background in C#, Python, Java, and Javascript.<br/><br/>
+                    I enjoy coding, tabletop games, hiking, as well as playing and creating video games.<br/><br/>
+                    Throughout my prior workplaces, I've stayed productive under pressure to mitigate problems before they become a crisis, help myself and others control emotional work stress, and value transparency and communication above all else.
                 </p>
 
-                <p className='mx-4 title-font'>Core Skills:</p>
+                {/* <p className='card-content m-4'>
+                    Education to go here?
+                </p> */}
+
+                <p className='m-4 title-font'>Core Skills:</p>
 
                 <div className='my-3'>
                     {formattedSkills()}

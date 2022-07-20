@@ -8,12 +8,12 @@ const Contact = () => {
 
     return (
         <div
-            className='w-75 m-auto media-full'
+            className='mx-5 m-auto'
             id='contact'
         >
 
             <div
-                className='card m-auto mt-5 w-50 media-widen'
+                className='card m-auto my-5 m-auto w-75 media-full'
                 data-aos='fade-up'
                 style={cardStyle}
             >

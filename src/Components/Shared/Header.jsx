@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { removeLinkStyle } from './StylePresets';
 
 const Header = ({showNavMenu}) => {
 
@@ -7,14 +8,18 @@ const Header = ({showNavMenu}) => {
     }
 
     return (
-        <header className='bg-dark w-100 py-1 d-flex flex-nowrap justify-content-between' style={headerStyle}>
-            <a href='/' className='d-inline-block m-2'><img src='/logo.png' className='rounded-circle w-75 media-remove'/></a>
-            <div className='d-inline-block container w-75 align-top m-1'>
-                <h1 className='text-white display-5 title-font'>William Elliott - Software Developer</h1>
+        <header className='bg-dark w-100 py-1 d-flex flex-wrap justify-content-center media-sticky-top' style={headerStyle}>
+            {/* <a href='/' className='d-inline-block m-2'><img src='/logo.png' className='rounded-circle w-75 media-remove'/></a> */}
+            <div className='d-inline container align-top w-25 media-widen-x'>
+                <h1 className='text-white display-6 title-font text-center'>William Elliott</h1>
+            </div>
+            <div className='media-remove'>
+                <a className='text-white fa-brands fa-github fa-4x mx-5' style={removeLinkStyle} href='http://github.com/wjtelliott'></a>
+                <a className='text-white fa-brands fa-linkedin fa-4x mx-5' style={removeLinkStyle} href="https://www.linkedin.com/in/william-jt-elliott/"></a>
             </div>
             {
                 showNavMenu &&
-                <div className='float-right mx-4'>
+                <div className='float-right w-25 media-remove d-flex flex-nowrap justify-content-center'>
                     <div className="dropdown">
                         <button
                             className="btn btn-secondary dropdown-toggle"
@@ -23,7 +28,8 @@ const Header = ({showNavMenu}) => {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                         >
-                            <i className="fa fa-bars"></i>
+                            Navigation
+                            {/* <i className="fa fa-bars"></i> */}
                         </button>
                         <ul
                             className="dropdown-menu"
@@ -38,7 +44,10 @@ const Header = ({showNavMenu}) => {
                     </div>
                 </div>    
             }
-            
+            <div className='media-show'>
+                <a className='text-white fa-brands fa-github fa-2x mx-5' style={removeLinkStyle} href='http://github.com/wjtelliott'></a>
+                <a className='text-white fa-brands fa-linkedin fa-2x mx-5' style={removeLinkStyle} href="https://www.linkedin.com/in/william-jt-elliott/"></a>
+            </div>
         </header>
     )
 }

@@ -3,6 +3,7 @@ import Footer from '../Shared/Footer';
 import Header from '../Shared/Header';
 import About from './About';
 import Contact from './Contact';
+import Education from './Education';
 import PriorExp from './PriorExp';
 import Projects from './Projects';
 
@@ -15,6 +16,7 @@ const Home = () => {
 
             <Header showNavMenu={true} />
             <About />
+            {/* <Education /> */}
             <Projects />
             <PriorExp />
             <Contact />

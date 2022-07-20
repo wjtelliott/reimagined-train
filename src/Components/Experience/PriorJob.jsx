@@ -4,7 +4,7 @@ const PriorJob = props => {
 
     const formattedLines = props.desc.map( (el, index) => {
         return (
-            <p key={`jobKey${index}`}>{el}</p>
+            <p className={ index < 2 ? 'text-muted' : '' } key={`jobKey${index}`}>{el}</p>
         )
     })
 
