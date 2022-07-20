@@ -10,8 +10,9 @@ const Header = ({showNavMenu}) => {
     return (
         <header className='bg-dark w-100 py-1 d-flex flex-wrap justify-content-center media-sticky-top' style={headerStyle}>
             {/* <a href='/' className='d-inline-block m-2'><img src='/logo.png' className='rounded-circle w-75 media-remove'/></a> */}
-            <div className='d-inline container align-top w-25 media-widen-x'>
-                <h1 className='text-white display-6 title-font text-center'>William Elliott</h1>
+            <div className='d-inline container align-top media-widen-x w-25'>
+                <h1 className='text-white display-6 title-font text-center media-show'>William Elliott</h1>
+                <h1 className='text-white display-3 title-font text-center media-remove'>William Elliott</h1>
             </div>
             <div className='media-remove'>
                 <a className='text-white fa-brands fa-github fa-4x mx-5' style={removeLinkStyle} href='http://github.com/wjtelliott'></a>

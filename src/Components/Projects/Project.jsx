@@ -22,7 +22,7 @@ const Project = props => {
 
                     <img style={cardImageStyle} className='card-img-top' src={props.imgsrc} alt={props.imgalt} />
 
-                    <p className='card-title display-6 m-4 title-font'>{props.title}</p>
+                    <p className='card-title display-5 m-4 title-font'>{props.title}</p>
                     <div className='card-content m-4'>{descLines}</div>
 
                     <div className='d-flex flex-nowrap justify-content-center my-4'>

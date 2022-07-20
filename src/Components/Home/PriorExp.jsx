@@ -20,7 +20,7 @@ const PriorExp = () => {
             desc: [
                 'Full-time',
                 'Dates: Mar \'21 - Jun \'22, 1yr 4mos',
-                'Communicate between buyers, retail managers, & vendors to facilitate effective inventory reports for accounts payable',
+                'Communicate between buyers, retail managers, and vendors to facilitate effective inventory reports for accounts payable',
                 'Maintain and verify BOLs with the physical inbound product to foster accurate inventory control',
                 'Participate in and sustain 5S standards to create a safe, productive work environment for all coworkers',
                 'Provide direct reports and other lead staff with tasks and their appropriate daily deadlines to implement a consistent workflow',
